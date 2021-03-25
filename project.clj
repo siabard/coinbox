@@ -9,6 +9,7 @@
                  [com.badlogicgames.gdx/gdx-platform "1.9.3"
                   :classifier "natives-desktop"]
                  ]
+  :plugins [[cider/cider-nrepl "0.25.2"]]
   :source-paths ["desktop/src" "src"]
   :aot [coinbox.desktop.launcher]
   :main coinbox.desktop.launcher

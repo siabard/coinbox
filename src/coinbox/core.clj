@@ -26,13 +26,3 @@
   (reset! gamestate/game this)
   (gamestate/load-resources)
   (.setScreen this screen/paused))
-
-
-
-
-
-
-
-
-
-

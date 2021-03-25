@@ -11,8 +11,8 @@
 (declare paused)
 
 (defn screen! [s]
-  (.postRunnable (Gdx/app)
-                 #(.setScreen @gamestate/game s)))
+  (.postRunner Gdx/app
+   #(.setScreen @gamestate/game s)))
 
 (def main
   (let [stage (atom nil)

@@ -19,7 +19,7 @@
 
 (defmacro on-gl
   [form]
-  `(.postRunnable (Gdx/app) (fn [] ~form)))
+  `(.postRunnable Gdx/app (fn [] ~form)))
 
 (defn load-resources
   []
